@@ -1,0 +1,198 @@
+/* Container */
+.admin-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #eaf1f7; /* Suave azul claro */
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.admin-container h2 {
+  text-align: center;
+  color: #004d99; /* Azul eSalud Perú */
+  margin-bottom: 25px;
+}
+
+/* Formulario */
+form#formDocumento {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+form#formDocumento input[type="text"],
+form#formDocumento input[type="date"],
+form#formDocumento input[type="file"] {
+  flex: 1 1 250px;
+  padding: 10px;
+  border: 1px solid #004d99;
+  border-radius: 5px;
+  font-size: 16px;
+  outline-offset: 2px;
+  transition: outline-color 0.3s ease;
+}
+
+form#formDocumento input[type="text"]:focus,
+form#formDocumento input[type="date"]:focus,
+form#formDocumento input[type="file"]:focus {
+  outline: 2px solid #0073e6;
+}
+
+/* Botón agregar */
+form#formDocumento button[type="submit"] {
+  background-color: #004d99;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  flex: 0 0 150px;
+}
+
+form#formDocumento button[type="submit"]:hover {
+  background-color: #003366;
+}
+
+/* Filtros */
+.filtros {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #004d99;
+}
+
+.filtros select {
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: 1px solid #004d99;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #004d99;
+  color: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+tbody tr:hover {
+  background-color: #f1f8ff;
+}
+
+/* Enlace archivo */
+td a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+/* Botones acción */
+.action-btn {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #005bb5;
+}
+
+.delete-btn {
+  background-color: #cc0000;
+}
+
+.delete-btn:hover {
+  background-color: #990000;
+}
+
+/* Estilos para botones de acción */
+.btn {
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  color: white;
+  text-align: center;
+  display: inline-block;
+  user-select: none;
+}
+/* Botón Ver - verde suave */
+button:nth-of-type(1) {
+  background-color: #3a7a3a; /* verde oscuro, suave */
+  color: #f0f0f0;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:nth-of-type(1):hover {
+  background-color: #2d5d2d;
+}
+
+/* Botón Imprimir - azul suave */
+button:nth-of-type(2) {
+  background-color: #346b9a; /* azul medio, suave */
+  color: #f0f0f0;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:nth-of-type(2):hover {
+  background-color: #264d70;
+}
+
+/* Link Eliminar - rojo suave */
+a {
+  background-color: #a94a4a; /* rojo oscuro, suave */
+  color: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+a:hover {
+  background-color: #6e3232;
+}
